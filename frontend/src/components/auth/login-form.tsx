@@ -73,26 +73,26 @@ export default function LoginForm() {
         
         <div className="space-y-4">
           <div className="relative group">
-            <Mail className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-purple-400 transition-colors" />
+            <Mail className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-teal-400 transition-colors" />
             <input
               id="email"
               name="email"
               type="email"
               placeholder="Email Address"
               required
-              className="w-full bg-black/20 border border-gray-600 rounded-xl px-10 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
+              className="w-full bg-black/20 border border-gray-600 rounded-xl px-10 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all"
             />
           </div>
 
           <div className="relative group">
-            <Lock className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-purple-400 transition-colors" />
+            <Lock className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-teal-400 transition-colors" />
             <input
               id="password"
               name="password"
               type="password"
               placeholder="Password"
               required
-              className="w-full bg-black/20 border border-gray-600 rounded-xl px-10 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
+              className="w-full bg-black/20 border border-gray-600 rounded-xl px-10 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all"
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function LoginForm() {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={loading}
-          className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl hover:opacity-90 transition-all flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-teal-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:bg-teal-500 transition-all flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? (
             <>

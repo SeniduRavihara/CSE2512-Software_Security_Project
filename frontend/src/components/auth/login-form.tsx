@@ -33,7 +33,7 @@ export default function LoginForm() {
 
       document.cookie = `token=${result.token}; path=/; max-age=3600; SameSite=Strict`;
       
-      router.push('/'); 
+      router.push('/profile'); 
       router.refresh();
     } catch (err) {
       if (err instanceof Error) {
